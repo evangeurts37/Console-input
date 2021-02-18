@@ -28,7 +28,7 @@ namespace Console_input
             Console.WriteLine($"your name is {name} and you were born in {age} years old, the current year is {years.ToString("yyyy")}");
 
 
-            years = 
+         
             
         }
     }
