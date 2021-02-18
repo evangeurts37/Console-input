@@ -20,15 +20,18 @@ namespace Console_input
             age = Convert.ToInt32(Console.ReadLine());
 
 
-            DateTime years = DateTime.Today;
+            DateTime date = DateTime.Today;
 
 
 
 
-            Console.WriteLine($"your name is {name} and you were born in {age} years old, the current year is {years.ToString("yyyy")}");
+            Console.WriteLine($"Hello {name} and you were born in {date.Year - age} , the current year is {date.Year}");
 
 
-         
+            
+
+
+            Console.ReadLine();
             
         }
     }
