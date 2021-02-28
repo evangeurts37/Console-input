@@ -47,6 +47,16 @@ namespace Console_input
             Console.WriteLine("_______________________________________________________________________________________________");
             Console.WriteLine("Give me 3 distances in Km");
             Console.WriteLine("1.");
+            km1 = (double)Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("2.");
+            km2 = (double)Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("3.");
+            km3 = (double)Convert.ToDecimal(Console.ReadLine());
+            double average = (km1 + km2 + km3) / 3;
+            
+            Console.WriteLine($"The average distance is {Math.Round((double)average,2)} Km");
+           
+
 
             Console.ReadLine();
 
