@@ -21,6 +21,11 @@ namespace Console_input
             double km2;
             double km3;
 
+
+            double a;
+            double b;
+            double c;
+
             Console.WriteLine("What is your name?");
             name = Console.ReadLine();
             Console.WriteLine("What is your age?");
@@ -55,11 +60,15 @@ namespace Console_input
             double average = (km1 + km2 + km3) / 3;
             
             Console.WriteLine($"The average distance is {Math.Round((double)average,2)} Km");
-           
-
-
+            Console.WriteLine("_____________________________________________________________________________________");
+            Console.WriteLine("Give me 1 side of a right angle triangle that is not the hypotenuse.");
+            a = (double)Convert.ToDecimal(Console.ReadLine());
+            Console.WriteLine("Now give me the other side that is not the hypotenuse");
+            b = (double)Convert.ToDecimal(Console.ReadLine());
+            c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+            Console.WriteLine($"The hypotenuse is {Math.Round((double)c, 2)}");
             Console.ReadLine();
-
+            
         }
     }
 }
